@@ -1,4 +1,4 @@
-# Comparison of two online retail in Hong Kong 
+# Comparison of two online stores in Hong Kong 
 # Project Description 
 I would build my own data crawler, and store the crawled data in the database so that analysts and market researchers can use them to better understand the competition.
 The crawler can automatically collect key product info including product name, brand, place of origin, quantity, selling price, discounted price and review.
