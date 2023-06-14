@@ -8,11 +8,17 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait as wait
 import uuid
 import time
+
 # get the brand list
 df_brand = pd.read_csv(r'brandlist.csv')
 
 # get the category list
 df_cat = pd.read_csv(r'category.csv')
+
+####################################
+##### online store - PARKnSHOP #####
+####################################
+
 name_list = []
 brand_list = []
 origin_list = []
@@ -24,8 +30,7 @@ emarket_id = []
 category = []
 x = 0 # count the loop
 driver = webdriver.Chrome('./chromedriver')
-#------------------------------------------------------------------------
-#online retailer - PARKnSHOP
+
 url = "https://www.pns.hk/zh-hk/"
 try:
    driver.get(url)
@@ -187,7 +192,9 @@ time.sleep(2)
 df_add_catid['Selling_Price'] = df_add_catid['Selling_Price'].str.replace('$','')
 df_add_catid['discounted_Price'] = df_add_catid['discounted_Price'].str.replace('$','')
 
-### online retailer -DKSH ###
+##################################
+##### online retailer - DKSH #####
+##################################
 name_list1 = []
 brand_list1 = []
 origin_list1 = []
